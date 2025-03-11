@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+header {
+  background-image: url("https://gridbyexample.com/img/inflicted.png");
+}
+.header-contan {
+  color: aliceblue;
+  padding-top: 6%;
+  padding-left: 3rem;
+  position: relative;
+}
+.header-contan h1 {
+  font-size: 4rem;
+}
+.header-contan p {
+  font-size: 20px;
+  padding: 20px;
+}
+.link {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  background-color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;;
+}
+/* navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgb(34, 34, 34);
+  padding: 0 10%;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: 40px;
+}
+main {
+  padding: 20px 10%;
+}
+.gird-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.box1 {
+  background-image: url("https://gridbyexample.com/img/inflicted.png");
+  color: rgb(231, 226, 226);
+  grid-column: 1 / span 4;
+  padding: 20px;
+  border: 1px solid rgb(231, 226, 226);
+}
+.box1 p a {
+  color: rgb(231, 226, 226);
+}
+.box2 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  /* grid-column:span 1; */
+  padding: 20px;
+  border: 1px solid black;
+}
+.box3 {
+  background-color: blueviolet;
+  color: white;
+  grid-column: span 5;
+  padding: 20px;
+}
+.box4 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  grid-column: span 2;
+  padding: 20px;
+  border: 1px solid black;
+  position: relative;
+}
+.New {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: rgb(6, 154, 6);
+  padding: 5px 10px;
+  color: white;
+  transform: rotate(-20deg);
+}
+.box5 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  grid-column: span 3;
+  padding: 20px;
+  border: 1px solid black;
+}
+.box6 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  grid-column: span 4;
+  padding: 20px;
+  border: 1px solid black;
+}
+.box7 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  /* grid-column:span 1; */
+  padding: 20px;
+  border: 1px solid black;
+}
+.box8 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  grid-column: span 3;
+  padding: 20px;
+  border: 1px solid black;
+}
+.box10,
+.box9 {
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  /* grid-column:span 1; */
+  padding: 20px;
+  border: 1px solid black;
+}
+.box11 {
+  padding: 20px;
+  border: 1px solid black;
+  grid-column: span 5;
+  background-image: url("https://gridbyexample.com/img/tiny_grid.png");
+  margin-bottom: 20px;
+}
+/* style in footer */
+footer {
+  background-image: url("https://gridbyexample.com/img/inflicted.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-contan {
+  margin: 0 auto;
+  width: 90%;
+  line-height: 1.5rem;
+  padding: 5rem;
+  border-radius: 5px;
+  background-color: rgba(229, 229, 229, 0.419);
+}
+.footer-contan a{
+  color: black;
+}
+
+
+/* resposives */
+@media  (max-width:640px){
+  .navbar ul{
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  main {
+    padding: 20px;
+  }
+ .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11{
+  grid-column: span 5;
+ }
+ .New{
+  top: -8px;
+  left: -6px;
+
+ }
+}
